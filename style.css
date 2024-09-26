@@ -35,14 +35,26 @@ li a {
   text-align: center;
   padding: 50px 20px;
   background: #048eaa;  
-  /* background-image: url("park.jpg"); */
   background-size: cover;
   color: #ffffff;
+  /* border-width: medium;
+  border-color: red; */
+  border: 15px solid rgb(246, 59, 228); /* Red solid border for hero section */
+  padding: 20px;
+}
+
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/park.jpg");
+  background-size: cover;
+  color: #ffffff;
+  border: 15px solid red; /* Red solid border for hero section */
+  padding: 20px;
 }
 
 .hero h1 {
   font-size: 2.5em;
-
 }
 
 .hero img {
@@ -99,3 +111,12 @@ li a {
   border: none;
   cursor: pointer;
 }
+
+/* Add borders to each section  */
+header {
+  border: 15px solid blue; /* Black solid border for the header */
+  padding: 20px;
+  text-align: center;
+}
+
+

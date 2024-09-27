@@ -8,20 +8,26 @@ body {
 
 header {
   background-color: #75e2e6;
-  padding: 20px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  height: 50px;
+  height: 70px;
 }
 
 .nav-list {
   list-style-type: none;
   display: flex;
   gap: 20px;
+}
+
+.header-text {
+  font-size: 25px;
+  font-weight: lighter;
+  padding: 10px
 }
 
 /* The li a is a descendant selector. It targets <a> elements that are decendants of <li> elements */
@@ -31,18 +37,8 @@ li a {
   font-weight: bold;
 }
 
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background: #048eaa;  
-  /* background-image: url("park.jpg"); */
-  background-size: cover;
-  color: #ffffff;
-}
-
 .hero h1 {
   font-size: 2.5em;
-
 }
 
 .hero img {
@@ -60,20 +56,28 @@ li a {
 .hero button {
   padding: 10px 20px;
   background-color: #75e2e6; 
-  /* Add a background Image to the css file here instead of the blue */
   border: none;
   cursor: pointer;
 }
 
-.info {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 50px 20px;
-  background-color: #f0f0f0;
+.dog-button {
+  width: 300px;
+  font-size: 25px
 }
 
-.dog-info {
-  text-align: center;
+#name {
+  width: 300px;
+  font-size: 22px;
+  text-align: left;
+}
+
+
+.info {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+  background-color: #ffffff;
+  padding: 0; 
 }
 
 .dog-info img {
@@ -98,4 +102,55 @@ li a {
   color: #ffffff;
   border: none;
   cursor: pointer;
+}
+
+.social-media {
+  border-radius: 0; /* Remove the round corners to make them square */
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed to keep them square */
+  padding: 10px;
+}
+
+/* Add borders to each section  */
+header {
+  border: 15px solid blue; 
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-image, .dog-info img {
+  border-radius: 50%;
+  border: 5px solid #277396; 
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.dog-info {
+  flex-basis: 33.33%; /* Each box will take up about 30% of the container's width */
+  box-sizing: border-box;
+  border: 15px solid greenyellow; 
+  text-align: center; /* Center-align the text */
+  background-color: #ffffff; /* Optional: Add a background color */
+  border-radius: 8px; /* Optional: Slightly round the corners */
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #048eaa;  
+  background-size: cover;
+  color: #ffffff;
+  border: 15px solid rgb(246, 59, 228); 
+  padding: 20px;
+}
+
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/park.jpg");
+  background-size: cover;
+  color: #ffffff;
+  border: 15px solid red; 
+  padding: 20px;
 }

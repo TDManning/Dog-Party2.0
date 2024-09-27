@@ -37,28 +37,6 @@ li a {
   font-weight: bold;
 }
 
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background: #048eaa;  
-  background-size: cover;
-  color: #ffffff;
-  /* border-width: medium;
-  border-color: red; */
-  border: 15px solid rgb(246, 59, 228); /* Red solid border for hero section */
-  padding: 20px;
-}
-
-#hero {
-  text-align: center;
-  padding: 50px 20px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/park.jpg");
-  background-size: cover;
-  color: #ffffff;
-  border: 15px solid red; /* Red solid border for hero section */
-  padding: 20px;
-}
-
 .hero h1 {
   font-size: 2.5em;
 }
@@ -93,11 +71,13 @@ li a {
   text-align: left;
 }
 
+
 .info {
   display: flex;
-  justify-content: space-evenly;
-  background-color: #f0f0f0;
-
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+  background-color: #ffffff;
+  padding: 0; 
 }
 
 .dog-info img {
@@ -124,31 +104,53 @@ li a {
   cursor: pointer;
 }
 
+.social-media {
+  border-radius: 0; /* Remove the round corners to make them square */
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed to keep them square */
+  padding: 10px;
+}
+
 /* Add borders to each section  */
 header {
-  border: 15px solid blue; /* Black solid border for the header */
+  border: 15px solid blue; 
   padding: 20px;
   text-align: center;
 }
 
 .hero-image, .dog-info img {
   border-radius: 50%;
-  border: 5px solid #277396; /* Adjust border size and color */
-  width: 200px; /* Adjust size of the image as needed */
-  height: 200px; /* Adjust size of the image as needed */
-  object-fit: cover; /* Ensures the image is centered and not stretched */
-}
-
-.dog-box {
-  
-  /* padding: 50px; */
+  border: 5px solid #277396; 
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
 }
 
 .dog-info {
-  text-align: center;
-  padding: 50px 20px;
-  padding-left: 110px;
-  padding-right: 110px;
+  flex-basis: 33.33%; /* Each box will take up about 30% of the container's width */
+  box-sizing: border-box;
   border: 15px solid greenyellow; 
+  text-align: center; /* Center-align the text */
+  background-color: #ffffff; /* Optional: Add a background color */
+  border-radius: 8px; /* Optional: Slightly round the corners */
 }
 
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #048eaa;  
+  background-size: cover;
+  color: #ffffff;
+  border: 15px solid rgb(246, 59, 228); 
+  padding: 20px;
+}
+
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/park.jpg");
+  background-size: cover;
+  color: #ffffff;
+  border: 15px solid red; 
+  padding: 20px;
+}

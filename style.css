@@ -8,20 +8,26 @@ body {
 
 header {
   background-color: #75e2e6;
-  padding: 20px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  height: 50px;
+  height: 80px;
 }
 
 .nav-list {
   list-style-type: none;
   display: flex;
   gap: 20px;
+}
+
+.header-text {
+  font-size: 25px;
+  font-weight: lighter;
+  padding: 10px
 }
 
 /* The li a is a descendant selector. It targets <a> elements that are decendants of <li> elements */
@@ -72,9 +78,19 @@ li a {
 .hero button {
   padding: 10px 20px;
   background-color: #75e2e6; 
-  /* Add a background Image to the css file here instead of the blue */
   border: none;
   cursor: pointer;
+}
+
+.dog-button {
+  width: 300px;
+  font-size: 25px
+}
+
+#name {
+  width: 300px;
+  font-size: 22px;
+  text-align: left;
 }
 
 .info {
@@ -82,6 +98,7 @@ li a {
   justify-content: space-evenly;
   padding: 50px 20px;
   background-color: #f0f0f0;
+
 }
 
 .dog-info {
@@ -117,6 +134,19 @@ header {
   border: 15px solid blue; /* Black solid border for the header */
   padding: 20px;
   text-align: center;
+}
+
+.hero-image, .dog-info img {
+  border-radius: 50%;
+  border: 5px solid #277396; /* Adjust border size and color */
+  width: 200px; /* Adjust size of the image as needed */
+  height: 200px; /* Adjust size of the image as needed */
+  object-fit: cover; /* Ensures the image is centered and not stretched */
+}
+
+.dog-box {
+  border: 15px solid greenyellow; 
+  /* padding: 50px; */
 }
 
 

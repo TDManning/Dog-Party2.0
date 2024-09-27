@@ -15,7 +15,7 @@ header {
 }
 
 .logo {
-  height: 80px;
+  height: 70px;
 }
 
 .nav-list {
@@ -96,13 +96,8 @@ li a {
 .info {
   display: flex;
   justify-content: space-evenly;
-  padding: 50px 20px;
   background-color: #f0f0f0;
 
-}
-
-.dog-info {
-  text-align: center;
 }
 
 .dog-info img {
@@ -145,8 +140,15 @@ header {
 }
 
 .dog-box {
-  border: 15px solid greenyellow; 
+  
   /* padding: 50px; */
 }
 
+.dog-info {
+  text-align: center;
+  padding: 50px 20px;
+  padding-left: 110px;
+  padding-right: 110px;
+  border: 15px solid greenyellow; 
+}
 

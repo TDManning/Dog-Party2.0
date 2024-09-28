@@ -1,5 +1,5 @@
 body {
-  overflow-x: scroll; /* Force horizontal scrolling */
+  overflow-x: scroll; 
 }
 
 body {
@@ -33,10 +33,9 @@ header {
 .header-text {
   font-size: 25px;
   font-weight: lighter;
-  padding: 10px
+  padding-top: 10px;
 }
 
-/* The li a is a descendant selector. It targets <a> elements that are decendants of <li> elements */
 li a { 
   text-decoration: none;
   color: #000000;
@@ -67,8 +66,10 @@ li a {
 }
 
 .dog-button {
-  width: 300px;
-  font-size: 25px
+  width: 350px;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 #name {
@@ -83,9 +84,8 @@ li a {
   justify-content: space-between; 
   flex-wrap: wrap; 
   background-color: #ffffff;
-  padding: 0; 
-  margin: 0;
-  /* max-width: 100%; */
+  /* padding: 0; 
+  margin: 0; */
 }
 
 .dog-info img {
@@ -97,27 +97,30 @@ li a {
 .dog-info h2 {
   font-size: 1.5em;
   margin: 10px 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .dog-info p {
   font-size: 1em;
   margin: 10px 0;
   text-align: left;
-  padding: 10px 20px;
+  padding: 20px 20px;
+  padding-bottom: 100px;
 }
 
 .dog-info button {
   padding: 10px 20px;
+
   background-color: #048eaa;
   color: #ffffff;
-  border: none;
   cursor: pointer;
 }
 
 .social-media {
-  border-radius: 0; /* Remove the round corners to make them square */
-  width: 50px; /* Adjust width as needed */
-  height: 50px; /* Adjust height as needed to keep them square */
+  border-radius: 0; 
+  width: 50px; 
+  height: 50px; 
   padding: 10px;
 }
 
@@ -129,6 +132,7 @@ header {
   box-sizing: border-box;
 }
 
+
 .hero-image, .dog-info img {
   border-radius: 50%;
   border: 5px solid #277396; 
@@ -138,13 +142,13 @@ header {
 }
 
 .dog-info {
-  flex-basis: 33.33%; /* Each box will take up about 30% of the container's width */
+  flex-basis: 33.33%; 
   box-sizing: border-box;
   border: 15px solid greenyellow; 
-  text-align: center; /* Center-align the text */
-  background-color: #ffffff; /* Optional: Add a background color */
-  border-radius: 8px; /* Optional: Slightly round the corners */
-  /* max-width: 100% */
+  text-align: center; 
+  background-color: #ffffff; 
+  /* border-radius: 8px;  */
+
 }
 
 .hero {

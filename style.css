@@ -1,9 +1,14 @@
 body {
+  overflow-x: scroll; /* Force horizontal scrolling */
+}
+
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   color: #000000;
+  width: 99%;
 }
 
 header {
@@ -12,6 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -78,6 +84,8 @@ li a {
   flex-wrap: wrap; 
   background-color: #ffffff;
   padding: 0; 
+  margin: 0;
+  /* max-width: 100%; */
 }
 
 .dog-info img {
@@ -94,6 +102,8 @@ li a {
 .dog-info p {
   font-size: 1em;
   margin: 10px 0;
+  text-align: left;
+  padding: 10px 20px;
 }
 
 .dog-info button {
@@ -116,6 +126,7 @@ header {
   border: 15px solid blue; 
   padding: 20px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .hero-image, .dog-info img {
@@ -133,6 +144,7 @@ header {
   text-align: center; /* Center-align the text */
   background-color: #ffffff; /* Optional: Add a background color */
   border-radius: 8px; /* Optional: Slightly round the corners */
+  /* max-width: 100% */
 }
 
 .hero {
@@ -147,10 +159,8 @@ header {
 
 #hero {
   text-align: center;
-  padding: 50px 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/park.jpg");
   background-size: cover;
   color: #ffffff;
   border: 15px solid red; 
-  padding: 20px;
 }

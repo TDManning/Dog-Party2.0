@@ -39,19 +39,15 @@ li a {
   font-weight: bold;
 }
 
-.hero h1 {
+h1 {
   font-size: 3em;
   font-weight: normal;
+  margin: 15px;
 }
-
+ 
 
 strong {
   font-weight: bold; 
-}
-
-.hero img {
-  border-radius: 50%;
-  margin: 20px 0;
 }
 
 .hero form {
@@ -99,7 +95,6 @@ strong {
 
 .dog-info {
   font-size: 1.4em;
-  /* font-weight: bold; */
   margin: 10px 0;
   padding-top: 20px;
   padding-bottom: 30px;

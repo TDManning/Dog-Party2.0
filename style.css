@@ -1,9 +1,11 @@
 body {
+  overflow-x: scroll;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   color: #000000;
+  width: 100%;
 }
 
 header {
@@ -12,6 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -27,10 +30,9 @@ header {
 .header-text {
   font-size: 25px;
   font-weight: lighter;
-  padding: 10px
+  padding-top: 10px;
 }
 
-/* The li a is a descendant selector. It targets <a> elements that are decendants of <li> elements */
 li a { 
   text-decoration: none;
   color: #000000;
@@ -38,7 +40,13 @@ li a {
 }
 
 .hero h1 {
-  font-size: 2.5em;
+  font-size: 3em;
+  font-weight: normal;
+}
+
+
+strong {
+  font-weight: bold; 
 }
 
 .hero img {
@@ -61,8 +69,10 @@ li a {
 }
 
 .dog-button {
-  width: 300px;
-  font-size: 25px
+  width: 350px;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #name {
@@ -71,13 +81,14 @@ li a {
   text-align: left;
 }
 
-
 .info {
   display: flex;
-  justify-content: space-between; 
-  flex-wrap: wrap; 
+  justify-content: center; 
+  flex-wrap: wrap;
   background-color: #ffffff;
-  padding: 0; 
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .dog-info img {
@@ -86,36 +97,45 @@ li a {
   height: 150px;
 }
 
-.dog-info h2 {
-  font-size: 1.5em;
+.dog-info {
+  font-size: 1.4em;
+  /* font-weight: bold; */
   margin: 10px 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .dog-info p {
   font-size: 1em;
   margin: 10px 0;
+  text-align: left;
+  padding: 20px 20px;
+  padding-bottom: 100px;
 }
 
 .dog-info button {
+  font-size: 1em;
+  font-weight: light;
   padding: 10px 20px;
   background-color: #048eaa;
   color: #ffffff;
-  border: none;
   cursor: pointer;
+  border: none;
 }
 
 .social-media {
-  border-radius: 0; /* Remove the round corners to make them square */
-  width: 50px; /* Adjust width as needed */
-  height: 50px; /* Adjust height as needed to keep them square */
+  width: 50px; 
+  height: 50px; 
   padding: 10px;
+  clip-path: inset(0%);
 }
 
 /* Add borders to each section  */
 header {
-  border: 15px solid blue; 
+  border: 13px solid blue; 
   padding: 20px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .hero-image, .dog-info img {
@@ -127,12 +147,29 @@ header {
 }
 
 .dog-info {
-  flex-basis: 33.33%; /* Each box will take up about 30% of the container's width */
+  flex-basis: 33.33%; 
   box-sizing: border-box;
-  border: 15px solid greenyellow; 
-  text-align: center; /* Center-align the text */
-  background-color: #ffffff; /* Optional: Add a background color */
-  border-radius: 8px; /* Optional: Slightly round the corners */
+  border: 12px solid greenyellow;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.dog-info:nth-child(2) {
+  margin-left: -5px;
+  margin-right: -5px; 
+  z-index: 2; 
+}
+
+.dog-info:first-child {
+  margin-left: 0; 
+}
+
+.dog-info:last-child {
+  margin-right: 0; 
 }
 
 .hero {
@@ -141,16 +178,25 @@ header {
   background: #048eaa;  
   background-size: cover;
   color: #ffffff;
-  border: 15px solid rgb(246, 59, 228); 
+  border: 13px solid rgb(246, 59, 228); 
   padding: 20px;
 }
 
 #hero {
   text-align: center;
-  padding: 50px 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/park.jpg");
   background-size: cover;
   color: #ffffff;
-  border: 15px solid red; 
-  padding: 20px;
+  border: 13px solid red; 
+}
+
+#info-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  margin: 0 auto; 
+  padding: 0; 
+  width: 100%;
+  box-sizing: border-box; 
 }

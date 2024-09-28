@@ -1,8 +1,5 @@
 body {
-  overflow-x: scroll; 
-}
-
-body {
+  overflow-x: scroll;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -43,7 +40,7 @@ li a {
 }
 
 .hero h1 {
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: normal;
 }
 
@@ -84,10 +81,9 @@ strong {
   text-align: left;
 }
 
-
 .info {
   display: flex;
-  justify-content: space-between; 
+  justify-content: center; 
   flex-wrap: wrap;
   background-color: #ffffff;
   margin: 0;
@@ -101,8 +97,9 @@ strong {
   height: 150px;
 }
 
-.dog-info h2 {
-  font-size: 1.5em;
+.dog-info {
+  font-size: 1.4em;
+  /* font-weight: bold; */
   margin: 10px 0;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -117,6 +114,8 @@ strong {
 }
 
 .dog-info button {
+  font-size: 1em;
+  font-weight: light;
   padding: 10px 20px;
   background-color: #048eaa;
   color: #ffffff;
@@ -133,12 +132,11 @@ strong {
 
 /* Add borders to each section  */
 header {
-  border: 15px solid blue; 
+  border: 13px solid blue; 
   padding: 20px;
   text-align: center;
   box-sizing: border-box;
 }
-
 
 .hero-image, .dog-info img {
   border-radius: 50%;
@@ -151,12 +149,27 @@ header {
 .dog-info {
   flex-basis: 33.33%; 
   box-sizing: border-box;
-  border: 15px solid greenyellow;
+  border: 12px solid greenyellow;
   text-align: center;
   background-color: #ffffff;
   margin: 0;
   padding: 10px;
   position: relative;
+  z-index: 1;
+}
+
+.dog-info:nth-child(2) {
+  margin-left: -5px;
+  margin-right: -5px; 
+  z-index: 2; 
+}
+
+.dog-info:first-child {
+  margin-left: 0; 
+}
+
+.dog-info:last-child {
+  margin-right: 0; 
 }
 
 .hero {
@@ -165,7 +178,7 @@ header {
   background: #048eaa;  
   background-size: cover;
   color: #ffffff;
-  border: 15px solid rgb(246, 59, 228); 
+  border: 13px solid rgb(246, 59, 228); 
   padding: 20px;
 }
 
@@ -174,12 +187,12 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/park.jpg");
   background-size: cover;
   color: #ffffff;
-  border: 15px solid red; 
+  border: 13px solid red; 
 }
 
 #info-container {
   display: flex;
-  justify-content: center; 
+  justify-content: space-between; 
   align-items: center; 
   flex-wrap: wrap; 
   margin: 0 auto; 
